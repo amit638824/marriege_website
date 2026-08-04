@@ -14,6 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
             
             const name = document.getElementById("userName").value.trim();
             const phone = document.getElementById("userPhone").value.trim();
+            const email = document.getElementById("userEmail").value.trim() || "Not provided";
             const rashi = document.getElementById("userRashi").value.trim() || "Not specified";
             const message = document.getElementById("userMessage").value.trim();
 
@@ -23,10 +24,10 @@ document.addEventListener("DOMContentLoaded", function () {
             }
 
             // Construct pre-filled WhatsApp message
-            let waMessage = `*Namaste Pandit Ji,* %0A%0AI would like to consult & register for *Marriage Prosperity Puja (Vivah Samriddhi Puja)*.%0A%0A*Name:* ${encodeURIComponent(name)}%0A*Mobile:* ${encodeURIComponent(phone)}%0A*Rashi/Gotra:* ${encodeURIComponent(rashi)}`;
+            let waMessage = `*Namaste Pandit Ji,* %0A%0AI would like to consult & register for *Marriage Prosperity Puja (Vivah Samriddhi Puja)*.%0A%0A*Name:* ${encodeURIComponent(name)}%0A*Mobile:* ${encodeURIComponent(phone)}%0A*Email:* ${encodeURIComponent(email)}%0A*Rashi/Gotra:* ${encodeURIComponent(rashi)}`;
             
             if (message) {
-                waMessage += `%0A*Details/Problem:* ${encodeURIComponent(message)}`;
+                waMessage += `%0A*Message:* ${encodeURIComponent(message)}`;
             }
 
             const waUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${waMessage}`;
