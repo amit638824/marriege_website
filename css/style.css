@@ -1,0 +1,485 @@
+/* -------------------------------------------------------------
+   Marriage Prosperity Puja - Divine Design System & Stylesheet
+   Color Palette: Maroon (#6b0518), Saffron Gold (#e67e22), Deep Crimson (#800020), Warm Gold (#d4af37), Ivory (#fffdf7)
+   ------------------------------------------------------------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --primary-maroon: #6b0518;
+    --secondary-crimson: #8b0000;
+    --accent-gold: #d4af37;
+    --accent-gold-bright: #ffc107;
+    --saffron-orange: #ff9933;
+    --bg-light: #fffdf7;
+    --bg-card: #ffffff;
+    --text-dark: #2c1810;
+    --text-muted: #665248;
+    --border-gold: rgba(212, 175, 55, 0.3);
+    --shadow-soft: 0 10px 30px rgba(107, 5, 24, 0.08);
+    --shadow-hover: 0 18px 40px rgba(107, 5, 24, 0.16);
+    --font-heading: 'Cinzel', serif;
+    --font-body: 'Poppins', sans-serif;
+}
+
+body {
+    font-family: var(--font-body);
+    background-color: var(--bg-light);
+    color: var(--text-dark);
+    overflow-x: hidden;
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6, .font-heading {
+    font-family: var(--font-heading);
+    letter-spacing: 0.5px;
+}
+
+/* Top Announcement Bar */
+.top-bar {
+    background: linear-gradient(90deg, #4a0310 0%, var(--primary-maroon) 50%, #4a0310 100%);
+    color: #ffeb3b;
+    font-size: 0.88rem;
+    font-weight: 500;
+    border-bottom: 1px solid var(--accent-gold);
+}
+.top-bar a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+.top-bar a:hover {
+    color: var(--accent-gold-bright);
+}
+
+/* Main Navbar */
+.navbar-custom {
+    background: rgba(255, 255, 255, 0.96);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+    border-bottom: 2px solid var(--accent-gold);
+    transition: all 0.3s ease;
+}
+.navbar-brand {
+    font-family: var(--font-heading);
+    font-weight: 800;
+    font-size: 1.4rem;
+    color: var(--primary-maroon) !important;
+}
+.navbar-brand span {
+    color: var(--saffron-orange);
+}
+.nav-link {
+    font-weight: 500;
+    color: var(--text-dark) !important;
+    padding: 0.5rem 1rem !important;
+    transition: color 0.3s ease;
+}
+.nav-link:hover, .nav-link.active {
+    color: var(--primary-maroon) !important;
+}
+
+/* Custom Buttons */
+.btn-gold {
+    background: linear-gradient(135deg, #f39c12 0%, var(--accent-gold) 50%, #b8860b 100%);
+    color: #ffffff !important;
+    font-weight: 600;
+    border: none;
+    border-radius: 50px;
+    padding: 12px 28px;
+    box-shadow: 0 4px 15px rgba(212, 175, 55, 0.4);
+    transition: all 0.3s ease;
+}
+.btn-gold:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(212, 175, 55, 0.6);
+    background: linear-gradient(135deg, #b8860b 0%, var(--accent-gold) 50%, #f39c12 100%);
+}
+
+.btn-whatsapp-hero {
+    background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
+    color: #ffffff !important;
+    font-weight: 600;
+    border-radius: 50px;
+    padding: 14px 32px;
+    font-size: 1.1rem;
+    box-shadow: 0 8px 20px rgba(37, 211, 102, 0.35);
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    border: none;
+}
+.btn-whatsapp-hero:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 28px rgba(37, 211, 102, 0.5);
+    color: #ffffff;
+}
+
+.btn-maroon {
+    background: linear-gradient(135deg, var(--primary-maroon) 0%, var(--secondary-crimson) 100%);
+    color: #ffffff !important;
+    font-weight: 600;
+    border-radius: 50px;
+    padding: 12px 28px;
+    box-shadow: 0 4px 15px rgba(107, 5, 24, 0.3);
+    transition: all 0.3s ease;
+    border: none;
+}
+.btn-maroon:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(107, 5, 24, 0.5);
+}
+
+/* Hero Section */
+.hero-section {
+    position: relative;
+    background: linear-gradient(135deg, rgba(107, 5, 24, 0.95) 0%, rgba(74, 3, 16, 0.92) 100%),
+                url('https://images.unsplash.com/photo-1609137144813-7d9921338f24?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
+    color: #ffffff;
+    padding: 100px 0 90px;
+    border-bottom: 5px solid var(--accent-gold);
+}
+.hero-badge {
+    background: rgba(255, 193, 7, 0.2);
+    border: 1px solid var(--accent-gold);
+    color: #ffeb3b;
+    padding: 8px 20px;
+    border-radius: 30px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    display: inline-block;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.hero-title {
+    font-size: 2.8rem;
+    font-weight: 800;
+    line-height: 1.25;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+.hero-title span {
+    color: var(--accent-gold-bright);
+    text-shadow: 0 0 15px rgba(255, 193, 7, 0.3);
+}
+.hero-subtitle {
+    font-size: 1.15rem;
+    color: #f1f1f1;
+    margin-bottom: 30px;
+    font-weight: 300;
+}
+.hero-trust-list {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 35px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px 30px;
+}
+.hero-trust-list li {
+    font-size: 0.95rem;
+    color: #fff8e7;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.hero-trust-list i {
+    color: var(--accent-gold-bright);
+}
+
+/* Quick Inquiry Card inside Hero */
+.hero-card {
+    background: rgba(255, 255, 255, 0.98);
+    border-radius: 20px;
+    padding: 35px 30px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
+    border: 2px solid var(--accent-gold);
+    color: var(--text-dark);
+}
+.hero-card h3 {
+    color: var(--primary-maroon);
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin-bottom: 8px;
+}
+.hero-card p {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    margin-bottom: 20px;
+}
+
+/* Section Common Styles */
+.section-padding {
+    padding: 90px 0;
+}
+.section-subtitle {
+    color: var(--saffron-orange);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 0.85rem;
+    margin-bottom: 10px;
+    display: block;
+}
+.section-title {
+    font-size: 2.2rem;
+    font-weight: 800;
+    color: var(--primary-maroon);
+    margin-bottom: 15px;
+}
+.section-title-divider {
+    width: 80px;
+    height: 3px;
+    background: linear-gradient(90deg, transparent, var(--accent-gold), transparent);
+    margin: 15px auto 0;
+}
+
+/* Feature Cards */
+.feature-card {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 35px 25px;
+    box-shadow: var(--shadow-soft);
+    border: 1px solid rgba(212, 175, 55, 0.2);
+    transition: all 0.35s ease;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+.feature-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg, var(--primary-maroon), var(--accent-gold));
+}
+.feature-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-hover);
+    border-color: var(--accent-gold);
+}
+.icon-box {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, rgba(107, 5, 24, 0.08) 0%, rgba(212, 175, 55, 0.15) 100%);
+    color: var(--primary-maroon);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    border: 1px solid var(--accent-gold);
+}
+
+/* Process Timeline Section */
+.process-section {
+    background: linear-gradient(180deg, #fffcf5 0%, #fff6e8 100%);
+    position: relative;
+}
+.step-card {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 35px 20px 25px;
+    text-align: center;
+    box-shadow: var(--shadow-soft);
+    border: 1px solid var(--border-gold);
+    position: relative;
+    height: 100%;
+}
+.step-number {
+    width: 45px;
+    height: 45px;
+    background: var(--primary-maroon);
+    color: var(--accent-gold-bright);
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: 1.2rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: -55px auto 20px;
+    border: 3px solid #ffffff;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+/* Puja Package Card */
+.package-card {
+    background: #ffffff;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: var(--shadow-soft);
+    border: 2px solid var(--border-gold);
+    transition: all 0.3s ease;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.package-card:hover {
+    transform: translateY(-6px);
+    box-shadow: var(--shadow-hover);
+    border-color: var(--accent-gold);
+}
+.package-header {
+    background: linear-gradient(135deg, var(--primary-maroon) 0%, var(--secondary-crimson) 100%);
+    color: #ffffff;
+    padding: 25px 20px;
+    text-align: center;
+}
+.package-header h3 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-bottom: 5px;
+    color: var(--accent-gold-bright);
+}
+.package-body {
+    padding: 30px 25px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.package-list {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 25px;
+}
+.package-list li {
+    padding: 8px 0;
+    border-bottom: 1px dashed #eee;
+    font-size: 0.95rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.package-list i {
+    color: #27ae60;
+}
+
+/* Trust Stats Bar */
+.stats-bar {
+    background: linear-gradient(135deg, var(--primary-maroon) 0%, #4a0310 100%);
+    color: #ffffff;
+    padding: 60px 0;
+    border-top: 3px solid var(--accent-gold);
+    border-bottom: 3px solid var(--accent-gold);
+}
+.stat-number {
+    font-family: var(--font-heading);
+    font-size: 2.8rem;
+    font-weight: 800;
+    color: var(--accent-gold-bright);
+}
+.stat-label {
+    font-size: 1rem;
+    color: #ffeedd;
+    font-weight: 500;
+}
+
+/* FAQ Accordion */
+.accordion-item {
+    border: 1px solid var(--border-gold);
+    border-radius: 12px !important;
+    margin-bottom: 15px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+}
+.accordion-button {
+    font-weight: 600;
+    color: var(--primary-maroon);
+    background-color: #ffffff;
+    padding: 18px 24px;
+    font-size: 1.05rem;
+}
+.accordion-button:not(.collapsed) {
+    color: var(--primary-maroon);
+    background-color: #fff9ef;
+    box-shadow: none;
+}
+.accordion-button:focus {
+    box-shadow: none;
+}
+.accordion-body {
+    color: var(--text-muted);
+    font-size: 0.98rem;
+    line-height: 1.7;
+    background-color: #ffffff;
+}
+
+/* Floating WhatsApp Button */
+.whatsapp-float {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 24px;
+    box-shadow: 0 8px 25px rgba(37, 211, 102, 0.5);
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 22px;
+    gap: 10px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    animation: pulse-green 2s infinite;
+}
+.whatsapp-float span {
+    font-size: 0.95rem;
+    font-weight: 600;
+    font-family: var(--font-body);
+}
+.whatsapp-float:hover {
+    color: #fff;
+    transform: scale(1.08);
+}
+
+@keyframes pulse-green {
+    0% {
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
+    }
+    70% {
+        box-shadow: 0 0 0 15px rgba(37, 211, 102, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+    }
+}
+
+/* Verification Disclosures & Footer */
+.footer {
+    background: #230208;
+    color: #e2d8d5;
+    padding-top: 70px;
+    padding-bottom: 30px;
+    border-top: 3px solid var(--accent-gold);
+    font-size: 0.92rem;
+}
+.footer h5 {
+    color: var(--accent-gold-bright);
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.footer a {
+    color: #d1c4c0;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+.footer a:hover {
+    color: var(--accent-gold-bright);
+}
+.verification-box {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px dashed var(--accent-gold);
+    border-radius: 12px;
+    padding: 20px;
+    margin-top: 25px;
+}
