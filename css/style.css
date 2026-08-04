@@ -1,5 +1,6 @@
 /* -------------------------------------------------------------
    Marriage Prosperity Puja - Ultra Premium Divine Design System
+   100% Responsive & High-Contrast Design
    ------------------------------------------------------------- */
 
 @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Cinzel:wght@600;700;800;900&family=Outfit:wght@300;400;500;600;700&display=swap');
@@ -7,7 +8,7 @@
 :root {
     --primary-maroon: #580012;
     --secondary-crimson: #800020;
-    --deep-wine: #38000b;
+    --deep-wine: #35000a;
     --accent-gold: #ffd700;
     --accent-gold-bright: #ffc107;
     --saffron-orange: #ff7700;
@@ -15,9 +16,9 @@
     --bg-card: #ffffff;
     --text-dark: #1f0b03;
     --text-muted: #524037;
-    --border-gold: rgba(255, 215, 0, 0.4);
-    --shadow-soft: 0 12px 35px rgba(88, 0, 18, 0.08);
-    --shadow-hover: 0 20px 45px rgba(88, 0, 18, 0.2);
+    --border-gold: rgba(255, 215, 0, 0.45);
+    --shadow-soft: 0 10px 30px rgba(88, 0, 18, 0.08);
+    --shadow-hover: 0 18px 40px rgba(88, 0, 18, 0.2);
     --shadow-gold: 0 10px 30px rgba(255, 215, 0, 0.35);
     --font-heading: 'Cinzel', serif;
     --font-decorative: 'Cinzel Decorative', serif;
@@ -156,13 +157,13 @@ h1, h2, h3, h4, h5, h6, .font-heading {
     color: #ffffff !important;
     font-weight: 700;
     border-radius: 50px;
-    padding: 15px 36px;
-    font-size: 1.1rem;
+    padding: 14px 32px;
+    font-size: 1.05rem;
     box-shadow: 0 10px 25px rgba(37, 211, 102, 0.4);
     transition: all 0.3s ease;
     display: inline-flex;
     align-items: center;
-    gap: 12px;
+    gap: 10px;
     border: none;
 }
 .btn-whatsapp-hero:hover {
@@ -176,7 +177,7 @@ h1, h2, h3, h4, h5, h6, .font-heading {
     color: #ffffff !important;
     font-weight: 700;
     border-radius: 50px;
-    padding: 13px 30px;
+    padding: 12px 28px;
     box-shadow: 0 6px 20px rgba(88, 0, 18, 0.35);
     transition: all 0.3s ease;
     border: 1px solid var(--accent-gold);
@@ -190,9 +191,9 @@ h1, h2, h3, h4, h5, h6, .font-heading {
 .hero-section {
     position: relative;
     background: linear-gradient(135deg, rgba(56, 0, 11, 0.95) 0%, rgba(88, 0, 18, 0.92) 50%, rgba(43, 0, 8, 0.96) 100%),
-                url('https://images.unsplash.com/photo-1609137144813-7d9921338f24?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
+                radial-gradient(circle at center, rgba(255, 215, 0, 0.15), transparent 70%);
     color: #ffffff;
-    padding: 95px 0 90px;
+    padding: 85px 0 80px;
     border-bottom: 5px solid var(--accent-gold);
 }
 
@@ -200,43 +201,43 @@ h1, h2, h3, h4, h5, h6, .font-heading {
     background: rgba(255, 215, 0, 0.15);
     border: 1px solid var(--accent-gold);
     color: #ffe082;
-    padding: 8px 22px;
+    padding: 8px 20px;
     border-radius: 30px;
-    font-size: 0.9rem;
+    font-size: 0.88rem;
     font-weight: 700;
     display: inline-flex;
     align-items: center;
     gap: 8px;
-    margin-bottom: 22px;
+    margin-bottom: 20px;
     text-transform: uppercase;
 }
 
 .hero-title {
-    font-size: 3rem;
+    font-size: 2.8rem;
     font-weight: 900;
     line-height: 1.2;
-    margin-bottom: 20px;
+    margin-bottom: 18px;
     color: #ffffff;
 }
 
 .hero-subtitle {
-    font-size: 1.18rem;
+    font-size: 1.15rem;
     color: #fce4ec;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
     font-weight: 300;
-    line-height: 1.7;
+    line-height: 1.65;
 }
 
 .hero-trust-list {
     list-style: none;
     padding: 0;
-    margin-bottom: 35px;
+    margin-bottom: 30px;
     display: flex;
     flex-wrap: wrap;
-    gap: 15px 25px;
+    gap: 12px 20px;
 }
 .hero-trust-list li {
-    font-size: 1rem;
+    font-size: 0.98rem;
     color: #fff8e7;
     display: flex;
     align-items: center;
@@ -251,7 +252,7 @@ h1, h2, h3, h4, h5, h6, .font-heading {
 .hero-card {
     background: rgba(255, 255, 255, 0.98);
     border-radius: 24px;
-    padding: 35px 28px;
+    padding: 32px 26px;
     box-shadow: 0 25px 60px rgba(0, 0, 0, 0.45);
     border: 2px solid var(--accent-gold);
     color: var(--text-dark);
@@ -259,25 +260,25 @@ h1, h2, h3, h4, h5, h6, .font-heading {
 .hero-card h3 {
     color: var(--primary-maroon);
     font-weight: 800;
-    font-size: 1.55rem;
+    font-size: 1.5rem;
     margin-bottom: 6px;
 }
 
 /* Sections */
 .section-padding {
-    padding: 95px 0;
+    padding: 80px 0;
 }
 .section-subtitle {
     color: var(--saffron-orange);
     font-weight: 800;
     text-transform: uppercase;
     letter-spacing: 2px;
-    font-size: 0.88rem;
+    font-size: 0.85rem;
     margin-bottom: 10px;
     display: block;
 }
 .section-title {
-    font-size: 2.4rem;
+    font-size: 2.2rem;
     font-weight: 800;
     color: var(--primary-maroon);
     margin-bottom: 12px;
@@ -290,13 +291,77 @@ h1, h2, h3, h4, h5, h6, .font-heading {
     border-radius: 2px;
 }
 
+/* About Puja Divine Mandap Illustration Card */
+.divine-mandap-card {
+    background: linear-gradient(135deg, #580012 0%, #35000a 100%);
+    border: 2px solid var(--accent-gold);
+    border-radius: 24px;
+    padding: 35px 25px;
+    color: #ffffff;
+    text-align: center;
+    box-shadow: 0 15px 40px rgba(88, 0, 18, 0.3);
+    position: relative;
+    overflow: hidden;
+}
+.divine-mandap-card::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at center, rgba(255, 215, 0, 0.2), transparent 70%);
+}
+.mandala-icon-wrapper {
+    width: 90px;
+    height: 90px;
+    margin: 0 auto 20px;
+    background: rgba(255, 215, 0, 0.15);
+    border: 2px solid var(--accent-gold);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.8rem;
+    color: var(--accent-gold);
+    box-shadow: 0 0 25px rgba(255, 215, 0, 0.4);
+}
+
+/* Key Benefits Card Fixes */
+.benefit-card {
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 28px 22px;
+    border: 1.5px solid var(--border-gold);
+    box-shadow: var(--shadow-soft);
+    transition: all 0.3s ease;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.benefit-card:hover {
+    transform: translateY(-6px);
+    box-shadow: var(--shadow-hover);
+    border-color: var(--accent-gold);
+}
+.benefit-icon-circle {
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #580012, #800020);
+    color: var(--accent-gold);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+    flex-shrink: 0;
+    border: 1px solid var(--accent-gold);
+}
+
 /* Feature Cards */
 .feature-card {
     background: #ffffff;
     border-radius: 20px;
-    padding: 35px 25px;
+    padding: 32px 22px;
     box-shadow: var(--shadow-soft);
-    border: 1px solid rgba(255, 215, 0, 0.35);
+    border: 1.5px solid rgba(255, 215, 0, 0.35);
     transition: all 0.35s ease;
     height: 100%;
     position: relative;
@@ -312,52 +377,53 @@ h1, h2, h3, h4, h5, h6, .font-heading {
     background: linear-gradient(90deg, var(--primary-maroon), var(--accent-gold));
 }
 .feature-card:hover {
-    transform: translateY(-8px);
+    transform: translateY(-6px);
     box-shadow: var(--shadow-hover);
     border-color: var(--accent-gold);
 }
 .icon-box {
-    width: 70px;
-    height: 70px;
+    width: 65px;
+    height: 65px;
     border-radius: 50%;
     background: linear-gradient(135deg, rgba(88, 0, 18, 0.08) 0%, rgba(255, 215, 0, 0.2) 100%);
     color: var(--primary-maroon);
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1.9rem;
-    margin-bottom: 20px;
+    font-size: 1.8rem;
+    margin-bottom: 18px;
     border: 2px solid var(--accent-gold);
+    flex-shrink: 0;
 }
 
-/* Process Timeline Section */
+/* Process Section */
 .process-section {
     background: linear-gradient(180deg, #fffdf5 0%, #fff7e6 100%);
 }
 .step-card {
     background: #ffffff;
     border-radius: 20px;
-    padding: 38px 20px 25px;
+    padding: 36px 18px 22px;
     text-align: center;
     box-shadow: var(--shadow-soft);
     border: 1px solid var(--border-gold);
     height: 100%;
 }
 .step-number {
-    width: 48px;
-    height: 48px;
+    width: 46px;
+    height: 46px;
     background: linear-gradient(135deg, var(--primary-maroon) 0%, var(--secondary-crimson) 100%);
     color: var(--accent-gold);
     font-family: var(--font-heading);
     font-weight: 800;
-    font-size: 1.25rem;
+    font-size: 1.2rem;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: -62px auto 20px;
+    margin: -58px auto 18px;
     border: 3px solid #ffffff;
-    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+    box-shadow: 0 5px 12px rgba(0,0,0,0.15);
 }
 
 /* Packages */
@@ -373,25 +439,25 @@ h1, h2, h3, h4, h5, h6, .font-heading {
     flex-direction: column;
 }
 .package-card:hover {
-    transform: translateY(-8px);
+    transform: translateY(-6px);
     box-shadow: var(--shadow-hover);
     border-color: var(--accent-gold);
 }
 .package-header {
     background: linear-gradient(135deg, var(--primary-maroon) 0%, var(--secondary-crimson) 100%);
     color: #ffffff;
-    padding: 28px 22px;
+    padding: 26px 20px;
     text-align: center;
     border-bottom: 2px solid var(--accent-gold);
 }
 .package-header h3 {
-    font-size: 1.45rem;
+    font-size: 1.4rem;
     font-weight: 800;
     margin-bottom: 5px;
     color: var(--accent-gold);
 }
 .package-body {
-    padding: 30px 25px;
+    padding: 28px 22px;
     flex-grow: 1;
     display: flex;
     flex-direction: column;
@@ -400,12 +466,12 @@ h1, h2, h3, h4, h5, h6, .font-heading {
 .package-list {
     list-style: none;
     padding: 0;
-    margin-bottom: 25px;
+    margin-bottom: 22px;
 }
 .package-list li {
-    padding: 10px 0;
+    padding: 9px 0;
     border-bottom: 1px dashed #eee;
-    font-size: 0.96rem;
+    font-size: 0.95rem;
     display: flex;
     align-items: center;
     gap: 10px;
@@ -418,7 +484,7 @@ h1, h2, h3, h4, h5, h6, .font-heading {
 .review-card {
     background: #ffffff;
     border-radius: 20px;
-    padding: 28px 24px;
+    padding: 26px 22px;
     border: 1px solid var(--border-gold);
     box-shadow: var(--shadow-soft);
     height: 100%;
@@ -432,18 +498,18 @@ h1, h2, h3, h4, h5, h6, .font-heading {
 .stats-bar {
     background: linear-gradient(135deg, #2b0008 0%, var(--primary-maroon) 50%, #2b0008 100%);
     color: #ffffff;
-    padding: 65px 0;
+    padding: 55px 0;
     border-top: 3px solid var(--accent-gold);
     border-bottom: 3px solid var(--accent-gold);
 }
 .stat-number {
     font-family: var(--font-heading);
-    font-size: 3rem;
+    font-size: 2.8rem;
     font-weight: 900;
     color: var(--accent-gold);
 }
 .stat-label {
-    font-size: 1rem;
+    font-size: 0.98rem;
     color: #ffe082;
     font-weight: 500;
 }
@@ -452,15 +518,15 @@ h1, h2, h3, h4, h5, h6, .font-heading {
 .accordion-item {
     border: 1px solid var(--border-gold);
     border-radius: 14px !important;
-    margin-bottom: 16px;
+    margin-bottom: 14px;
     overflow: hidden;
 }
 .accordion-button {
     font-weight: 700;
     color: var(--primary-maroon);
     background-color: #ffffff;
-    padding: 18px 24px;
-    font-size: 1.08rem;
+    padding: 16px 22px;
+    font-size: 1.05rem;
 }
 .accordion-button:not(.collapsed) {
     color: var(--primary-maroon);
@@ -469,24 +535,23 @@ h1, h2, h3, h4, h5, h6, .font-heading {
 
 /* High Contrast Super Clear Footer */
 .footer {
-    background: linear-gradient(180deg, #240007 0%, #120003 100%);
+    background: linear-gradient(180deg, #2b0008 0%, #150004 100%);
     color: #ffffff !important;
-    padding-top: 75px;
-    padding-bottom: 35px;
+    padding-top: 65px;
+    padding-bottom: 30px;
     border-top: 4px solid var(--accent-gold);
-    font-size: 1rem;
 }
 .footer h5 {
-    color: var(--accent-gold-bright) !important;
+    color: var(--accent-gold) !important;
     font-weight: 800;
-    font-size: 1.25rem;
-    margin-bottom: 22px;
+    font-size: 1.2rem;
+    margin-bottom: 18px;
     letter-spacing: 0.5px;
     text-transform: uppercase;
 }
 .footer p, .footer li {
-    color: #f8f9fa !important;
-    font-size: 0.98rem;
+    color: #ffffff !important;
+    font-size: 0.96rem;
     line-height: 1.7;
 }
 .footer a {
@@ -499,6 +564,21 @@ h1, h2, h3, h4, h5, h6, .font-heading {
     color: #ffffff !important;
     text-decoration: underline;
 }
+.footer-badge-link {
+    display: inline-block;
+    background: rgba(255, 215, 0, 0.15);
+    border: 1px solid var(--accent-gold);
+    color: var(--accent-gold) !important;
+    padding: 8px 18px;
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    text-decoration: none !important;
+}
+.footer-badge-link:hover {
+    background: var(--accent-gold);
+    color: #35000a !important;
+}
 .footer-divider {
     border-color: rgba(255, 215, 0, 0.3) !important;
 }
@@ -506,27 +586,27 @@ h1, h2, h3, h4, h5, h6, .font-heading {
 /* Floating WhatsApp Button */
 .whatsapp-float {
     position: fixed;
-    bottom: 28px;
-    right: 28px;
+    bottom: 24px;
+    right: 24px;
     background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
     color: #FFF !important;
     border-radius: 50px;
     text-align: center;
-    font-size: 26px;
+    font-size: 24px;
     box-shadow: 0 10px 30px rgba(37, 211, 102, 0.55);
     z-index: 9999;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 12px 24px;
-    gap: 10px;
+    padding: 10px 20px;
+    gap: 8px;
     text-decoration: none;
     transition: all 0.3s ease;
     animation: pulse-green 2s infinite;
     border: 2px solid #ffffff;
 }
 .whatsapp-float span {
-    font-size: 0.95rem;
+    font-size: 0.9rem;
     font-weight: 700;
     font-family: var(--font-body);
 }
@@ -535,8 +615,8 @@ h1, h2, h3, h4, h5, h6, .font-heading {
     transform: scale(1.08);
 }
 .online-dot {
-    width: 10px;
-    height: 10px;
+    width: 9px;
+    height: 9px;
     background-color: #00ff66;
     border-radius: 50%;
     display: inline-block;
@@ -545,6 +625,28 @@ h1, h2, h3, h4, h5, h6, .font-heading {
 
 @keyframes pulse-green {
     0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7); }
-    70% { box-shadow: 0 0 0 18px rgba(37, 211, 102, 0); }
+    70% { box-shadow: 0 0 0 16px rgba(37, 211, 102, 0); }
     100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+}
+
+/* Media Query Mobile Fixes */
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 2.1rem;
+    }
+    .section-title {
+        font-size: 1.8rem;
+    }
+    .brand-title {
+        font-size: 1.15rem;
+    }
+    .brand-icon {
+        width: 38px;
+        height: 38px;
+        font-size: 1.1rem;
+    }
+    .whatsapp-float {
+        padding: 8px 14px;
+        font-size: 20px;
+    }
 }
